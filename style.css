@@ -71,10 +71,12 @@ li {
 
 .task__item {
     display: flex;
-    align-items: center;
+    margin-bottom: 5px;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-.task__list span {
+#task__list span {
     background-color: rgb(83, 78, 78);
     width: 40px;
     height: 40px;
@@ -84,12 +86,12 @@ li {
     justify-content: center;
 }
 
-.task__list p {
+#task__list p {
     padding-left: 5px;
     flex: 1;
 }
 
-.task__list button {
+#task__list button {
     right: -1px;
     background-color: rgba(199, 165, 175, 0);
     border: none;

@@ -36,16 +36,38 @@
                     <button>DELETE</button>
                 </li> -->
             </ul>
-            <p class="app__footer">You have 4 task</p>
+            <p class="app__footer">You have <span id="totalOfTasks">0</span> task</p>
         </div>
     </div>
     <script>
         inputHTML = document.getElementById("app__input");
         buttonHTML = document.getElementById("app__button");
         taskListHTML = document.getElementById("task__list");
+        totalOfTasksHTML = document.getElementById("totalOfTasks");
+        let numberOfTasks = 0;
         buttonHTML.addEventListener("click", () => {
+            numberOfTasks++;
+            totalOfTasksHTML.textContent = numberOfTasks;
             console.log(inputHTML.value);
+            const taskItem = document.createElement("li");
+            taskItem.innerHTML = `
+                <span>${numberOfTasks}</span>
+                <p>${inputHTML.value}</p>
+                <button onClick ="handleDeleteTasks(this)">DELETE</button>
+            `
+            //add style
+            taskItem.classList.add("task__item")
+            taskListHTML.appendChild(taskItem);
+            inputHTML.value = ""
         })
+        const handleDeleteTasks = (button) => {
+            <!-- closest -->
+            const taskItem = button.closest(".task__item")
+            taskItem.remove()
+            numberOfTasks--;
+            totalOfTasksHTML.textContent = numberOfTasks;
+            console.log(taskItem)
+        }
 
     </script>
 </body>
