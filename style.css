@@ -8,6 +8,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    font-style: normal;
 }
 
 ul,
@@ -42,7 +43,7 @@ li {
 
 }
 
-.app__input {
+#app__input {
     margin: 0% 10% 0% 10%;
     padding: 10px;
     margin-bottom: 10px;
@@ -50,22 +51,22 @@ li {
     border: 1px black solid;
 }
 
-.app__button {
+#app__button {
     margin: 0% 10% 0% 10%;
     padding: 10px;
     border-radius: 5px;
     border: 1px black solid;
-    margin-bottom: 10%;
     color: rgb(223, 67, 67);
     background-color: rgb(48, 46, 46);
 }
 
-.task__list {
+#task__list {
     margin: 10%;
     display: flex;
     flex-direction: column;
     padding-left: 0px;
     position: relative;
+    font-size: x-small;
 }
 
 .task__item {
@@ -93,4 +94,12 @@ li {
     background-color: rgba(199, 165, 175, 0);
     border: none;
     color: rgba(255, 0, 0, 0.546);
+    flex: 1;
+}
+
+.app__footer {
+    font-size: xx-small;
+    font-weight: bold;
+    text-align: end;
+    margin: 0px 10px 10px;
 }
