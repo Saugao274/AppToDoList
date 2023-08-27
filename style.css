@@ -6,6 +6,8 @@ body {
     height: 100%;
     width: 100%;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 ul,
@@ -14,16 +16,14 @@ li {
 }
 
 #wrapper {
-    margin-top: 60px;
     display: flex;
     height: 100%;
     width: 50%;
     border-radius: 7px;
-
 }
 
 .app {
-    background-color: rgba(184, 148, 159, 0.781);
+    background-color: rgba(199, 165, 175, 0.781);
 
     margin: 15%;
     height: 100%;
@@ -85,10 +85,12 @@ li {
 
 .task__list p {
     padding-left: 5px;
+    flex: 1;
 }
 
 .task__list button {
     right: -1px;
-    position: absolute;
-
+    background-color: rgba(199, 165, 175, 0);
+    border: none;
+    color: rgba(255, 0, 0, 0.546);
 }
