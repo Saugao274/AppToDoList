@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(-90deg, rgba(154, 149, 197, 0.628), rgb(44, 41, 43));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+#wrapper {
+    background-color: rgb(85, 113, 225);
+    height: 100%;
+    width: 50%;
+    margin-top: 100px;
+    border-radius: 7px;
+}
+
+.app {
+    margin: 10%;
+}
+
+.app__heading {}
+
+.app__input {}
+
+.app__button {}
