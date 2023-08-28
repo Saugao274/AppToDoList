@@ -76,7 +76,7 @@ li {
     align-items: stretch;
 }
 
-#task__list span {
+.numTask {
     background-color: rgb(83, 78, 78);
     width: 40px;
     height: 40px;
