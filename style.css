@@ -8,101 +8,204 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    font-style: normal;
-    font-weight: 900;
+}
+
+@media all and (max-width: 1000px) {
+
+    #wrapper {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .app {
+        background-color: rgba(199, 165, 175, 0.781);
+        border-radius: 20px;
+        margin: 15%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: rgba(209, 140, 140, 0.523) 0px 2px 1px, rgba(204, 116, 116, 0.349) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(193, 79, 79, 0.707) 0px 32px 16px;
+    }
+
+    .app__heading {
+        margin: 15% 0%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+
+    }
+
+    #app__input {
+        margin: 0% 10% 0% 10%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px black solid;
+    }
+
+    #app__button {
+        margin: 0% 10% 0% 10%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px black solid;
+        color: rgb(223, 67, 67);
+        background-color: rgb(48, 46, 46);
+    }
+
+    #task__list {
+        margin: 10%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        position: relative;
+        font-size: x-small;
+    }
+
+    .task__item {
+        display: flex;
+        margin-bottom: 5px;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .numTask {
+        background-color: rgb(83, 78, 78);
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #task__list p {
+        padding-left: 5px;
+        flex: 1;
+    }
+
+    #task__list button {
+        position: absolute;
+        right: -1px;
+        background-color: rgba(199, 165, 175, 0);
+        border: none;
+        color: rgba(255, 0, 0, 0.546);
+        flex: 1;
+    }
+
+    .app__footer {
+        font-size: xx-small;
+        font-weight: bold;
+        text-align: end;
+        margin: 0px 10px 10px;
+    }
+}
+
+
+@media all and (min-width: 2000px) {
+
+    #wrapper {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        font-size: xx-large;
+    }
+
+    .app {
+        background-color: rgba(199, 165, 175, 0.781);
+        border-radius: 20px;
+        margin: 15%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: rgba(209, 140, 140, 0.523) 0px 2px 1px, rgba(204, 116, 116, 0.349) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(193, 79, 79, 0.707) 0px 32px 16px;
+    }
+
+    .app__heading {
+        margin: 15% 0%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+
+    }
+
+    #app__input {
+        margin: 0% 10% 0% 10%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px black solid;
+        font-size: xx-large;
+    }
+
+    #app__button {
+        margin: 0% 10% 0% 10%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px black solid;
+        color: rgb(223, 67, 67);
+        background-color: rgb(48, 46, 46);
+        font-size: xx-large;
+    }
+
+    #task__list {
+        margin: 10%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        position: relative;
+        font-size: xx-large;
+
+    }
+
+    .task__item {
+        display: flex;
+        margin-bottom: 5px;
+        flex-direction: row;
+        font-size: xxx-large;
+        align-items: center;
+    }
+
+    .numTask {
+        background-color: rgb(83, 78, 78);
+        width: 10%;
+        border-radius: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #task__list p {
+        padding-left: 5px;
+        flex: 1;
+    }
+
+    #task__list button {
+        position: absolute;
+        right: -1px;
+        background-color: rgba(199, 165, 175, 0);
+        border: none;
+        color: rgb(206 21 21);
+        flex: 1;
+        font-size: xx-large;
+    }
+
+    .app__footer {
+        font-size: larger;
+        font-weight: bold;
+        text-align: end;
+        margin: 0px 10px 10px;
+
+    }
 }
 
 ul,
 li {
     list-style: none;
-}
-
-#wrapper {
-    display: flex;
-    height: 100%;
-    width: 50%;
-    border-radius: 7px;
-}
-
-.app {
-    background-color: rgba(199, 165, 175, 0.781);
-
-    margin: 15%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-shadow: rgba(209, 140, 140, 0.523) 0px 2px 1px, rgba(204, 116, 116, 0.349) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(193, 79, 79, 0.707) 0px 32px 16px;
-}
-
-.app__heading {
-    margin: 15% 0%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 0px;
-    padding-bottom: 30px;
-
-}
-
-#app__input {
-    margin: 0% 10% 0% 10%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px black solid;
-}
-
-#app__button {
-    margin: 0% 10% 0% 10%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px black solid;
-    color: rgb(223, 67, 67);
-    background-color: rgb(48, 46, 46);
-}
-
-#task__list {
-    margin: 10%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0px;
-    position: relative;
-    font-size: x-small;
-}
-
-.task__item {
-    display: flex;
-    margin-bottom: 5px;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-.numTask {
-    background-color: rgb(83, 78, 78);
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#task__list p {
-    padding-left: 5px;
-    flex: 1;
-}
-
-#task__list button {
-    right: -1px;
-    background-color: rgba(199, 165, 175, 0);
-    border: none;
-    color: rgba(255, 0, 0, 0.546);
-    flex: 1;
-}
-
-.app__footer {
-    font-size: xx-small;
-    font-weight: bold;
-    text-align: end;
-    margin: 0px 10px 10px;
 }
