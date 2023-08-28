@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 2000px) {
 
     #wrapper {
         display: flex;
