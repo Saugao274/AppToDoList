@@ -6,13 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
     <div id="wrapper">
         <div class="app">
             <h1 class="app__heading">To Do App</h1>
-            <input id="app__input" placeholder="Enter your task name ...">
+            <input id="app__input" placeholder="Enter your task name ..." onkeydown="keydownHandler(event)"
+                onkeyup="keyupHandler(event)" onkeypress="keypressHandler(event)">
             <button id="app__button" type="button">Add Task</button>
             <ul id="task__list">
 
